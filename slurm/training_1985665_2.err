@@ -1,0 +1,61 @@
+[2023-02-14 05:11:53,959 INFO cifar.py line 84 31456] 
+dataset : cifar10
+
+model : allconv
+
+epochs : 100
+
+learning_rate : 0.01
+
+batch_size : 128
+
+eval_batch_size : 1000
+
+momentum : 0.9
+
+weight_decay : 0.0005
+
+layers : 40
+
+widen_factor : 2
+
+droprate : 0.0
+
+mixture_width : 3
+
+mixture_depth : -1
+
+augmentation_severity : 3
+
+no_jsd : False
+
+all_ops : False
+
+save_folder : ./snapshots/cifar10/allconv/2023-02-14_05:11:53.936948
+
+resume_path : 
+
+evaluate : False
+
+print_freq : 50
+
+num_workers : 4
+
+config_path : None
+
+image_size : 32
+
+disable_tqdm : False
+
+log_path : ./snapshots/cifar10/allconv/2023-02-14_05:11:53.936948/training_log.csv
+
+/work/ws-tmp/sa058646-retreat/augmix-refactored-vcnwyixi-py3.8/lib/python3.8/site-packages/torch/utils/data/dataloader.py:554: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+Traceback (most recent call last):
+  File "augmix_refactored/script/cifar.py", line 176, in <module>
+    main()
+  File "augmix_refactored/script/cifar.py", line 90, in main
+    net = get_model(config, num_classes)
+  File "/work/ws-tmp/sa058646-retreat/augmix-refactored/augmix_refactored/utils/utils.py", line 37, in get_model
+    net = AllConvNet(num_classes)
+TypeError: __init__() missing 1 required positional argument: 'width'

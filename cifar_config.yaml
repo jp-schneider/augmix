@@ -8,7 +8,7 @@ Config:
   epochs: 5
   eval_batch_size: 1000
   evaluate: false
-  layers: 20
+  layers: 40
   learning_rate: 0.1
   mixture_depth: 4
   mixture_width: 3
